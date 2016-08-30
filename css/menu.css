@@ -1,0 +1,128 @@
+body{
+	background: #4A87E7;
+}
+*{margin: 0px; padding: 0px;}
+header, footer, section, nav{display: block;}
+.webstatis{
+	margin: 15px auto;
+	width: 980px
+}
+#logo{
+	float: left;
+	height: 120px;
+	margin-right: 10px;
+	margin-left: 15px;
+	text-shadow: 100px; rgba(0,0,0,0,2) inset;
+}
+#judul{
+	background: #3ABF34;
+	height: 115px;
+	margin: 15px auto -15px auto;
+	padding: 10px 0px 20px 0px;
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+}
+#judul h1{
+	font-size: 30px;
+	line-height: 38px;
+	font-weight: 500px;
+	color: blue;
+}
+#judul h2{
+	margin-top: 10px;
+	font-size: 28px;
+	font-weight: 300px;
+	color: cyan;
+}
+
+nav ul{
+	width: 100%;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+	background: blueviolet;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 0;
+	border-radius: 0px;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+}
+nav ul:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+nav ul li{
+	float: left;
+}
+nav ul li:hover{
+	background: # green;
+	border-radius: 10px;
+}
+nav ul li:hover a{
+	color: #ffffff;
+}
+nav ul li a{
+	display: block;
+	padding: 15px 40px;
+	color: white;
+	text-decoration: none;
+}
+/*menghilangkan semua sub menu*/
+nav ul ul{
+	display: none;
+	background: # pink;
+	border-radius: 0;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	width: 250px;
+}
+/*munculkan sub menu saat di dekati kursor*/
+nav ul li:hover >ul{
+	display: block;
+	color: white;
+	border-radius: 10px;
+}
+nav ul ul li{
+	float: none;
+	border-top: 1px solid #000000;
+	position: relative;
+}
+nav ul ul li a{
+	padding: 10px 20px;
+	color: #fff;
+}
+nav ul ul li a:hover{
+	background: #A60112;
+}
+nav ul ul ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+/*bagian isi*/
+#konten{
+float: left;
+width: 640px;
+}
+#sidebar{
+float: right;
+width: 240px;
+}
+
+/*bagian bawah/footer*/
+footer{
+	clear: both;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: verdana;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 0 10px rgb(0,0,0) inset;
+	background: blueviolet;
+	color: white;
+	
+}
